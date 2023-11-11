@@ -23,6 +23,7 @@ imageElement.setAttribute('alt',`Profile image of ${fullName}`);
 foods = ['ice cream','mac and cheese', 'garlic bread'];
 foodElement.textContent = foods;
 
+
 yummy = 'waffles'
 foods.push(yummy)
 foodElement.innerHTML += `<br>${foods}`;

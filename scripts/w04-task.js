@@ -64,4 +64,3 @@ myProfile.placesLived.forEach(place => {
     dd.textContent = place.length;
     document.querySelector("#places-lived").appendChild(dd);
 });
-

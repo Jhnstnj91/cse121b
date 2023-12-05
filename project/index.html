@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Currency Converter</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/money.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+        <link rel="stylesheet" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Archivo+Narrow|Quicksand" rel="stylesheet">
+
+    </head>
+    <body onload="loadPage()">
+        <main>
+
+            <p>Date</p>
+            <input type="date" id='date' onchange="getExchange()">
+
+            <p>From</p>
+            <select id="current-curr" onchange="getExchange()">
+            </select>
+            <input type="text" id="amount"  onchange="getExchange()">
+
+            <p>To</p>
+            <select id="new-curr" onchange="getExchange()">
+            </select>
+            <input type="text" id="new-value" onchange="getExchangeReverse()">
+            
+            
+
+        </main>
+        
+
+    <script src="js/initialLoad.js"></script>
+    <script src="js/currency.js"></script>
+
+    </body>
+
+</html>
